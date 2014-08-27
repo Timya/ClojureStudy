@@ -23,8 +23,13 @@
 ;; comment
 (read-string "(+ 1 3 #_(* 2 2) 8)")
 (first '(1,2,3))
+
 ;; quote macro
 '(1 2)
 (quote (1 2))
 
 
+
+;; about fn
+(defn indexable-word? [Word])
+(filter (fn [w] (> (count w) 2)) (str/split "A fine Day"))
